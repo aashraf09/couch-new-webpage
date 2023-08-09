@@ -3,9 +3,17 @@
 @tailwind utilities;
 
 
+@font-face {
+    font-family: JelleRoman;
+    src: url('../jellee/Jellee-Roman.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
 .page {
     background-color: #060C23;
     color: white;
+    font-family: JelleRoman, sans-serif;
 }
 
 .landing {
