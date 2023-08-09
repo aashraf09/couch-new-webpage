@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
+import { Parallax } from 'react-parallax'
 import liveTherapy from '@/assets/liveTherapy.svg'
 import wellnessStore from '@/assets/wellnessStore.svg'
 import community from '@/assets/community.svg'
@@ -36,11 +37,11 @@ const Page = () => {
       <Navbar />
       <section className="landing text-center relative">
         <h2 className='text-3xl md:text-6xl font-bold w-3/4 m-auto py-10 md:py-20 text-[#A2E080]'>Experience the power of a healthy mind with our support</h2>
-        <p className='text-base md:text-xl md:text-3xl font-bold w-3/4 md:w-1/2 m-auto'>Get mental health support, services and products on your own terms.</p>
+        <p className='text-base md:text-3xl font-bold w-3/4 md:w-1/2 m-auto'>Get mental health support, services and products on your own terms.</p>
         <Image src={semiCircles} alt='' className='semiCircles absolute'></Image>
       </section>
 
-      <section className="features py-[20vh] mt-20 relative">
+      <section className="features py-[20vh] text-center md:text-left mt-20 relative">
         <div className="flex justify-between items-center">
           <Image src={blueEmoji} alt='emoji' className='emoji emoji1'></Image>
           <Image src={greenEmoji} alt='emoji' className='emoji emoji2'></Image>
@@ -48,7 +49,7 @@ const Page = () => {
         </div>
         <div className="feature flex flex-col md:flex-row gap-10 items-center justify-center py-10 px-10 md:px-20">
           <div className="text md:w-1/3">
-            <h2 className='text-3xl md:text-5xl font-bold text-[#9199F2]'>Live Therapy</h2>
+            <h2 className='text-3xl py-5 md:text-5xl font-bold text-[#9199F2]'>Live Therapy</h2>
             <p>Anonymous & personalized therapy sessions for when life gets overwhelming.</p>
           </div>
           <div className="img">
@@ -60,13 +61,13 @@ const Page = () => {
             <Image src={wellnessStore} alt='Wellness Store' width={400}></Image>
           </div>
           <div className="text md:w-1/3 order-first md:order-last">
-            <h2 className='text-3xl md:text-5xl font-bold text-[#9199F2]'>Wellness Store</h2>
+            <h2 className='text-3xl py-5 md:text-5xl font-bold text-[#9199F2]'>Wellness Store</h2>
             <p>Elevate your body,  mind and soul with our items thats promote holistic well-being. </p>
           </div>
         </div>
         <div className="feature flex flex-col md:flex-row gap-10 items-center justify-center py-10 px-10 md:px-20">
           <div className="text md:w-1/3">
-            <h2 className='text-3xl md:text-5xl font-bold text-[#9199F2]'>Community</h2>
+            <h2 className='text-3xl py-5 md:text-5xl font-bold text-[#9199F2]'>Community</h2>
             <p>Anonymous & personalized therapy sessions for when life gets overwhelming.</p>
           </div>
           <div className="img">
@@ -76,7 +77,7 @@ const Page = () => {
       </section>
       <section className='creating-community  text-[#212640]'>
         <div className="creating-community-grid py-16 md:py-32 grid grid-cols-5 gap-5 px-10 md:px-20 bg-white place-items-center">
-          <div className="col-span-5 md:col-span-3 row-span-2 p-5 font-bold text-3xl md:text-5xl ">
+          <div className="col-span-5 md:col-span-3 row-span-2 p-5 font-bold text-3xl md:text-5xl xl:text-7xl">
             <h2>Creating a global <span className='blue-span-text'>Community</span> of <span className='blue-span-text'>mindful</span> individuals</h2>
           </div>
           <div className='hidden md:block'></div>
@@ -92,13 +93,13 @@ const Page = () => {
           <Image src={gridImg8} alt='grid image'></Image>
         </div>
       </section>
-      <section className="therapy">
-        <div className="flex flex-col items-center justify-center">
+      <section className="">
+        <div className="flex therapy relative flex-col items-center justify-center py-20">
           <div className="heading">
-            <h2 className='text-3xl md:text-5xl text-center font-bold w-3/4 m-auto py-16 md:py-32'><span className="green-span-text">Therapy </span> at your own <span className="green-span-text">convenience</span></h2>
+            <h2 className='text-3xl md:text-5xl text-center font-bold w-3/4 m-auto py-16 md:py-32 xl:text-7xl'><span className="green-span-text">Therapy </span> at your own <span className="green-span-text">convenience</span></h2>
           </div>
-          <div className="">
-            <Image src={therapy} alt='therapy' className='w-3/4 m-auto' width={500}></Image>
+          <div className="h-[10vh] md:h-[30vh]">
+            <Image src={therapy} alt='therapy' className='therapy-img absolute w-3/4 m-auto' width={500}></Image>
           </div>
         </div>
       </section>
@@ -112,7 +113,7 @@ const Page = () => {
           </div>
           <div><Image className='scaling-animation' src={star} alt='circle'></Image></div>
           <div className="img col-span-4">
-            <Image src={relaxingBody} alt='therapy' width={500}></Image>
+              <Image src={relaxingBody} alt='therapy' width={500}></Image>
           </div>
           <div><Image className='scaling-animation' src={heart} alt='circle'></Image></div>
         </div>
@@ -121,7 +122,7 @@ const Page = () => {
         <About />
       </section>
       <section className="mobile-app">
-        <h2 className='text-3xl md:text-5xl text-center font-bold text-white w-3/4 py-10 m-auto'>Mobile App coming soon!</h2>
+        <h2 className='text-3xl md:text-5xl xl:text-7xl text-center font-bold text-white w-3/4 py-16 md:py-32 m-auto'>Mobile App coming soon!</h2>
         <Image src={mobile} alt='mobile-bg' className='mobile-app-bg m-auto'></Image>
       </section>
       <Footer />
@@ -130,3 +131,8 @@ const Page = () => {
 }
 
 export default Page
+
+
+/*
+3. purple man animation
+*/

@@ -13,17 +13,27 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
 
+.semiCircles {
+    top: 10vh;
+    width: 100%;
 }
 
 .features {
-    border-top: 1px solid white;
+    border-top: 2px solid white;
     border-style: dashed;
+    border-color: #7378DE;
     border-radius: 50vw 51vw 0px 0px / 20vw 20vw 0px 0px;
 }
 
+.therapy-img{
+    bottom: -5px;
+    left: 0;
+}
+
 .scaling-animation {
-    animation: bouncing 1s ease 0s infinite normal both;
+    animation: bouncing 2s ease 0s infinite normal both;
 }
 
 @keyframes bouncing {
@@ -53,6 +63,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.therapy-img{
+    left: 25%;
+    bottom: -7vh;
+    width: 50vw;
 }
 
 .mobile-app {
@@ -98,15 +114,29 @@
     left: 5vw;
 }
 
-.semiCircles {
-    top: 10vh;
-    width: 100%;
+
+
+@media only screen and (min-width: 1240px) {
+    .emoji1 {
+        top: 7%;
+        left: 4%;
+    }
+
+    .emoji2 {
+        top: -4vh;
+        left: 47%;
+    }
+
+    .emoji3 {
+        top: 7%;
+        right: 4%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-    .emoji3 {
-        top: 5vh;
-        right: 5vw;
+    .emoji1 {
+        top: 3vh;
+        left: 5vw;
     }
 
     .emoji2 {
@@ -114,31 +144,37 @@
         left: 47%;
     }
 
-    .emoji1 {
-        top: 5vh;
-        left: 5vw;
+    .emoji3 {
+        top: 3vh;
+        right: 5vw;
     }
 
+    .therapy-img{
+        left: 10%;
+        bottom: -2vh;
+        width: 80vw;
+    }
+    
 }
 
 
 @media only screen and (max-width: 425px) {
+    .emoji1 {
+        top: 0vh;
+        left: 5vw;
+        width: 15vw;
+    }
+
+    .emoji2 {
+        top: -3.5vh;
+        width: 15vw;
+        left: 43%;
+    }
+
     .emoji3 {
         top: 0vh;
         right: 5vw;
         width: 15vw;
-    }
-    
-    .emoji2 {
-        top: -3vh;
-        width: 15vw;
-        left: 40%;
-    }
-    
-    .emoji1 {
-        width: 15vw;
-        top: 0vh;
-        left: 5vw;
     }
 
 }

@@ -5,8 +5,8 @@ import Logo from '../assets/logo.svg'
 
 const Footer = () => {
     return (
-        <footer className='text-white'>
-            <div className="main flex flex-col md:flex-row items-center justify-start gap-10  px-10">
+        <footer className='text-white py-2'>
+            <div className="main flex flex-col md:flex-row items-center justify-start gap-10  px-10 py-16">
             <div className="flex flex-col  justify-between items-start py-12 md:w-1/2">
                 <div className="logo">
                     <Image src={Logo} alt='logo'></Image>
@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
             </div>
             <hr className='divider'/>
-            <div className="copyright p-10 flex flex-col md:flex-row items-center gap-5">
+            <div className="copyright p-10 py-16 flex flex-col md:flex-row items-center gap-5">
                 <Image src={Logo} alt='logo'></Image>
                 <p> - Copyright @ 2023</p>
             </div>
