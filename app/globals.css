@@ -119,7 +119,7 @@
 @media only screen and (min-width: 1240px) {
     .emoji1 {
         top: 7%;
-        left: 4%;
+        left: 6%;
     }
 
     .emoji2 {
@@ -129,7 +129,7 @@
 
     .emoji3 {
         top: 7%;
-        right: 4%;
+        right: 6%;
     }
 }
 
