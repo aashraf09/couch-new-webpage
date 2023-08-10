@@ -200,23 +200,56 @@ h2{
 }
 
 
+@media only screen and (max-width: 650px) {
+    .emoji1 {
+        top: 2vh;
+        left: 5vw;
+        width: 10vw;
+    }
+
+    .emoji2 {
+        top: -3vh;
+        left: 43%;
+        width: 10vw;
+    }
+
+    .emoji3 {
+        top: 2vh;
+        right: 5vw;
+        width: 10vw;
+    }
+
+    .therapy-img{
+        left: 10%;
+        bottom: -30px;
+        width: 80vw;
+    }
+
+}
+
 @media only screen and (max-width: 425px) {
     .emoji1 {
         top: 1vh;
         left: 5vw;
-        width: 12vw;
+        width: 10vw;
     }
 
     .emoji2 {
-        top: -4vh;
-        width: 12vw;
+        top: -3vh;
+        width: 10vw;
         left: 43%;
     }
 
     .emoji3 {
         top: 1vh;
         right: 5vw;
-        width: 12vw;
+        width: 10vw;
+    }
+
+    .therapy-img{
+        left: 10%;
+        bottom: -20px;
+        width: 80vw;
     }
 
 }
