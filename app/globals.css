@@ -94,7 +94,7 @@ h2{
 }
 
 .creating-community-grid {
-    border-radius: 60vw 60vw 0px 0px / 15vw 15vw 0px;
+    border-radius: 70vw 70vw 0px 0px / 45vw 45vw 0px;
 }
 
 .choose-professionals {
@@ -157,6 +157,10 @@ h2{
     left: 5vw;
 }
 
+.grid-img{
+    width: 20vw;
+}
+
 
 @media only screen and (min-width: 1440px) {
     .emoji1 {
@@ -202,21 +206,21 @@ h2{
 
 @media only screen and (max-width: 425px) {
     .emoji1 {
-        top: 0vh;
+        top: 1vh;
         left: 5vw;
-        width: 15vw;
+        width: 12vw;
     }
 
     .emoji2 {
-        top: -3.5vh;
-        width: 15vw;
+        top: -4vh;
+        width: 12vw;
         left: 43%;
     }
 
     .emoji3 {
-        top: 0vh;
+        top: 1vh;
         right: 5vw;
-        width: 15vw;
+        width: 12vw;
     }
 
 }

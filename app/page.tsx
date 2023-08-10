@@ -17,6 +17,8 @@ import gridImg5 from '@/assets/grid-img-5.svg'
 import gridImg6 from '@/assets/grid-img-6.svg'
 import gridImg7 from '@/assets/grid-img-7.svg'
 import gridImg8 from '@/assets/grid-img-8.svg'
+import gridImg9 from '@/assets/grid-img-9.svg'
+import gridImg10 from '@/assets/grid-img-10.svg'
 import therapy from '@/assets/therapy.svg'
 import circle from '@/assets/circle.svg'
 import star from '@/assets/star.svg'
@@ -43,9 +45,9 @@ const Page = () => {
 
       <section className="features py-[20vh] text-center md:text-left mt-20 relative">
         <div className="flex justify-between items-center">
-          <Image src={blueEmoji} alt='emoji' className='emoji emoji1'></Image>
-          <Image src={greenEmoji} alt='emoji' className='emoji emoji2'></Image>
-          <Image src={purpleEmoji} alt='emoji' className='emoji emoji3'></Image>
+          <Image src={blueEmoji} alt='emoji' className='emoji emoji1 scaling-animation'></Image>
+          <Image src={greenEmoji} alt='emoji' className='emoji emoji2 scaling-animation'></Image>
+          <Image src={purpleEmoji} alt='emoji' className='emoji emoji3 scaling-animation'></Image>
         </div>
         <div className="feature flex flex-col md:flex-row gap-10 items-center justify-center py-10 px-10 md:px-20">
           <div className="text md:w-1/3">
@@ -76,7 +78,7 @@ const Page = () => {
         </div>
       </section>
       <section className='creating-community  text-[#212640]'>
-        <div className="creating-community-grid py-16 md:py-32 grid grid-cols-5 gap-5 px-10 md:px-20 bg-white place-items-center">
+        <div className="hidden md:grid creating-community-grid py-16 md:py-32 grid-cols-5 gap-5 px-10 md:px-20 bg-white place-items-center">
           <div className="col-span-5 md:col-span-3 row-span-2 p-5 font-bold text-3xl md:text-5xl xl:text-7xl">
             <h2>Creating a global <span className='blue-span-text'>Community</span> of <span className='blue-span-text'>mindful</span> individuals</h2>
           </div>
@@ -86,16 +88,39 @@ const Page = () => {
           <Image src={gridImg3} alt='grid image'></Image>
           <div className='hidden md:block'></div>
           <div className='hidden md:block'></div>
-          <Image src={gridImg6} alt='grid image' className='col-span-2 row-span-2'></Image>
+          <Image src={gridImg4} alt='grid image' className='col-span-2 row-span-2'></Image>
           <Image src={gridImg7} alt='grid image'></Image>
           <Image src={gridImg4} alt='grid image'></Image>
           <Image src={gridImg5} alt='grid image'></Image>
           <Image src={gridImg8} alt='grid image'></Image>
         </div>
+        <div className="creating-community-grid flex flex-col text-center md:hidden bg-white">
+          <div className="p-5 font-bold py-20 text-3xl md:text-5xl xl:text-7xl">
+            <h2>Creating a global <span className='blue-span-text'>Community</span> of <span className='blue-span-text'>mindful</span> individuals</h2>
+          </div>
+          <div className="images pb-20 w-3/4 m-auto gap-5 flex justify-center items-center">
+            <div className="grid grid-col-1 gap-5">
+              <Image src={gridImg1} alt='grid-img' className='grid-img'></Image>
+              <Image src={gridImg2} alt='grid-img' className='grid-img'></Image>
+              <Image src={gridImg3} alt='grid-img' className='grid-img'></Image>
+            </div>
+            <div className="grid grid-col-1 gap-5">
+              <Image src={gridImg4} alt='grid-img' className='grid-img'></Image>
+              <Image src={gridImg5} alt='grid-img' className='grid-img'></Image>
+              <Image src={gridImg6} alt='grid-img' className='grid-img'></Image>
+              <Image src={gridImg7} alt='grid-img' className='grid-img'></Image>
+            </div>
+            <div className="grid grid-col-1 gap-5">
+              <Image src={gridImg8} alt='grid-img' className='grid-img'></Image>
+              <Image src={gridImg9} alt='grid-img' className='grid-img'></Image>
+              <Image src={gridImg10} alt='grid-img' className='grid-img'></Image>
+            </div>
+          </div>
+        </div>
       </section>
       <section className="">
         <div className="flex therapy relative flex-col items-center justify-center py-20">
-          <div className="heading">
+          <div className="heading mb-16">
             <h2 className='text-3xl md:text-5xl text-center font-bold w-3/4 m-auto py-16 md:py-32 xl:text-7xl'><span className="green-span-text">Therapy </span> at your own <span className="green-span-text">convenience</span></h2>
           </div>
           <div className="h-[10vh] md:h-[30vh]">
@@ -108,12 +133,12 @@ const Page = () => {
           <div><Image className='scaling-animation' src={circle} alt='circle'></Image></div>
           <div className="col-span-4"></div>
           <div><Image className='scaling-animation' src={flower} alt='circle'></Image></div>
-          <div className="heading col-span-6 pb-10">
+          <div className="heading col-span-6 pb-10 mb-16">
             <h2 className='text-3xl md:text-5xl text-[#0F1141] text-center font-bold w-3/4 m-auto'><span className="blue-span-text">Choose professionals </span> according to your <span className="blue-span-text"> preferences and needs</span></h2>
           </div>
           <div><Image className='scaling-animation' src={star} alt='circle'></Image></div>
           <div className="img col-span-4 up-down-animation">
-              <Image src={relaxingBody} alt='therapy' width={500}></Image>
+            <Image src={relaxingBody} alt='therapy' width={500}></Image>
           </div>
           <div><Image className='scaling-animation' src={heart} alt='circle'></Image></div>
         </div>
