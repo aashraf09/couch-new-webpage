@@ -90,7 +90,7 @@ const Page = () => {
           <div className='hidden md:block'></div>
           <Image src={gridImg4} alt='grid image' className='col-span-2 row-span-2'></Image>
           <Image src={gridImg7} alt='grid image'></Image>
-          <Image src={gridImg4} alt='grid image'></Image>
+          <Image src={gridImg6} alt='grid image'></Image>
           <Image src={gridImg5} alt='grid image'></Image>
           <Image src={gridImg8} alt='grid image'></Image>
         </div>
