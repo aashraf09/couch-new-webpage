@@ -95,7 +95,7 @@ const Page = () => {
           <Image src={gridImg8} alt='grid image'></Image>
         </div>
         <div className="creating-community-grid flex flex-col text-center md:hidden bg-white">
-          <div className="p-5 font-bold py-20 text-3xl md:text-5xl xl:text-7xl">
+          <div className="p-5 font-bold py-20 pt-32 text-3xl md:text-5xl xl:text-7xl">
             <h2>Creating a global <span className='blue-span-text'>Community</span> of <span className='blue-span-text'>mindful</span> individuals</h2>
           </div>
           <div className="images pb-20 w-3/4 m-auto gap-5 flex justify-center items-center">
@@ -119,12 +119,12 @@ const Page = () => {
         </div>
       </section>
       <section className="">
-        <div className="flex therapy relative flex-col items-center justify-center py-20">
+        <div className="flex therapy relative flex-col items-center justify-center pt-10 pb-20">
           <div className="heading mb-16">
             <h2 className='text-3xl md:text-5xl text-center font-bold w-3/4 m-auto py-16 md:py-32 xl:text-7xl'><span className="green-span-text">Therapy </span> at your own <span className="green-span-text">convenience</span></h2>
           </div>
-          <div className="h-[10vh] md:h-[30vh]">
-            <Image src={therapy} alt='therapy' className='therapy-img absolute w-3/4 m-auto' width={500}></Image>
+          <div className="absolute therapy-img">
+            <Image src={therapy} alt='therapy' className=' w-3/4 m-auto' width={500}></Image>
           </div>
         </div>
       </section>
