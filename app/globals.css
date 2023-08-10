@@ -10,10 +10,13 @@
     font-style: normal;
 }
 
+h2{
+    font-family: JelleRoman, sans-serif;
+}
+
 .page {
     background-color: #060C23;
     color: white;
-    font-family: JelleRoman, sans-serif;
 }
 
 .landing {
@@ -56,6 +59,38 @@
     100% {
         transform: scale(1);
     }
+}
+
+.up-down-animation{
+    animation: myAnim 10s linear 0s infinite normal both;
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateY(-8px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateY(8px);
+	}
+
+	80% {
+		transform: translateY(6.4px);
+	}
+
+	90% {
+		transform: translateY(-6.4px);
+	}
 }
 
 .creating-community-grid {
@@ -121,7 +156,6 @@
     top: 12vh;
     left: 5vw;
 }
-
 
 
 @media only screen and (min-width: 1440px) {

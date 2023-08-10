@@ -112,7 +112,7 @@ const Page = () => {
             <h2 className='text-3xl md:text-5xl text-[#0F1141] text-center font-bold w-3/4 m-auto'><span className="blue-span-text">Choose professionals </span> according to your <span className="blue-span-text"> preferences and needs</span></h2>
           </div>
           <div><Image className='scaling-animation' src={star} alt='circle'></Image></div>
-          <div className="img col-span-4">
+          <div className="img col-span-4 up-down-animation">
               <Image src={relaxingBody} alt='therapy' width={500}></Image>
           </div>
           <div><Image className='scaling-animation' src={heart} alt='circle'></Image></div>
