@@ -88,8 +88,8 @@ const Page = () => {
           </div>
         </div>
       </section>
-      <section className='creating-community  text-[#212640]'>
-        <div className="hidden md:grid creating-community-grid py-16 md:pt-[40vh] md:pb-32 grid-cols-5 gap-5 px-10 md:px-20 bg-white place-items-center">
+      <section className='creating-community bg-white  text-[#212640]'>
+        <div className="hidden md:grid creating-community-grid py-16 md:pt-[40vh] md:pb-32 grid-cols-5 gap-5 px-10 md:px-20 m-auto items-center place-items-center">
           <div className="col-span-5 md:col-span-3 row-span-2 p-5 font-bold text-3xl md:text-5xl xl:text-7xl">
             <h2>Creating a global <span className='blue-span-text'>Community</span> of <span className='blue-span-text'>mindful</span> individuals</h2>
           </div>
