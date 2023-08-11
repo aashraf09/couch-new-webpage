@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import { Parallax } from 'react-parallax'
+import Lottie from 'lottie-react'
 import liveTherapy from '@/assets/liveTherapy.svg'
 import wellnessStore from '@/assets/wellnessStore.svg'
 import community from '@/assets/community.svg'
@@ -25,7 +25,8 @@ import flower from '@/assets/flower.svg'
 import heart from '@/assets/heart.svg'
 import relaxingBody from '@/assets/relaxing body.svg'
 // import therapy from '@/assets/therapy.svg'
-import therapy from '@/assets/relaxing body.gif'
+import therapy from '@/assets/WebAnim.json'
+// import therapy from '@/assets/relaxing body.gif'
 import mobile from '@/assets/mobile.svg'
 import Navbar from '@/components/Navbar'
 import About from '@/components/About'
@@ -34,6 +35,15 @@ import Footer from '@/components/Footer'
 
 
 const Page = () => {
+
+  const options = {
+    loop: true,
+    autoplay: true,
+    animationData: therapy,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
   return (
     <main className='page'>
@@ -125,7 +135,7 @@ const Page = () => {
             <h2 className='text-3xl md:text-5xl text-center font-bold w-3/4 m-auto py-16 md:py-32 xl:text-7xl'><span className="green-span-text">Therapy </span> at your own <span className="green-span-text">convenience</span></h2>
           </div>
           <div className="absolute therapy-img">
-            <Image src={therapy} alt='therapy' className=' w-3/4 m-auto' width={500}></Image>
+          <Lottie animationData={therapy} loop={true} height={400} width={400} />
           </div>
         </div>
       </section>

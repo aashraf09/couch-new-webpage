@@ -101,7 +101,7 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 80vh;
+    height: 100vh;
 }
 
 .therapy-img{
@@ -194,7 +194,7 @@ h2{
     .therapy-img{
         left: 10%;
         bottom: -30px;
-        width: 80vw;
+        width: 85vw;
     }
 
     .therapy {
@@ -223,6 +223,10 @@ h2{
         width: 10vw;
     }
 
+    .therapy {
+        height: 80vh;
+    }
+
     .therapy-img{
         left: 10%;
         bottom: -30px;
@@ -248,6 +252,10 @@ h2{
         top: 1vh;
         right: 5vw;
         width: 10vw;
+    }
+
+    .therapy {
+        height: 50vh;
     }
 
     .therapy-img{
