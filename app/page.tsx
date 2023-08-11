@@ -89,8 +89,8 @@ const Page = () => {
         </div>
       </section>
       <section className='creating-community bg-white  text-[#212640]'>
-        <div className="hidden md:grid creating-community-grid py-16 md:pt-[40vh] md:pb-32 grid-cols-5 gap-5 px-10 md:px-20 m-auto items-center place-items-center">
-          <div className="col-span-5 md:col-span-3 row-span-2 p-5 font-bold text-3xl md:text-5xl xl:text-7xl">
+        <div className="hidden md:grid creating-community-grid py-16 md:pt-[40vh] md:pb-32 grid-cols-6 gap-5 px-10 md:px-20 m-auto items-center place-items-center">
+          <div className="col-span-6 md:col-span-4 row-span-2 p-5 font-bold text-3xl md:text-5xl xl:text-7xl">
             <h2>Creating a global <span className='blue-span-text'>Community</span> of <span className='blue-span-text'>mindful</span> individuals</h2>
           </div>
           <div className='hidden md:block'></div>
@@ -98,11 +98,14 @@ const Page = () => {
           <Image src={gridImg2} alt='grid image'></Image>
           <Image src={gridImg3} alt='grid image'></Image>
           <div className='hidden md:block'></div>
+          {/* <Image src={gridImg10} alt='grid image'></Image> */}
+          <div className='hidden md:block'></div>
           <div className='hidden md:block'></div>
           <Image src={gridImg4} alt='grid image' className='col-span-2 row-span-2'></Image>
           <Image src={gridImg7} alt='grid image'></Image>
           <Image src={gridImg6} alt='grid image'></Image>
           <Image src={gridImg5} alt='grid image'></Image>
+          <Image src={gridImg10} alt='grid image'></Image>
           <Image src={gridImg8} alt='grid image'></Image>
         </div>
         <div className="creating-community-grid flex flex-col text-center md:hidden bg-white">
