@@ -6,12 +6,12 @@ import GreenIcon from '@/assets/green.svg'
 
 const About = () => {
     return (
-        <section className="about mt:20 mt-40 text-center py-20 ">
+        <section className="about mt-20 md:mt-40 text-center py-10 md:py-20 ">
             <div className='md:w-3/5 m-auto'>
                 <h2 className="heading text-4xl xl:text-6xl font-bold mb-10 text-white">
                     About us
                 </h2>
-                <p className="about-para text-2xl md:text-2xl xl:text-4xl font-bold text-white pt-16 px-6 md:p-14">
+                <p className="about-para text-2xl md:text-2xl xl:text-4xl font-bold text-white pt-8 md:pt-16 px-6 md:p-14">
                     We're building a <span className='green-span-text'>comprehensive mental health care </span> system
                 </p>
             </div>

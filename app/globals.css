@@ -106,7 +106,7 @@ h2{
 
 .therapy-img{
     left: 25%;
-    bottom: -45px;
+    bottom: -50px;
     width: 50vw;
 }
 
@@ -193,8 +193,12 @@ h2{
 
     .therapy-img{
         left: 10%;
-        bottom: -20px;
+        bottom: -30px;
         width: 80vw;
+    }
+
+    .therapy {
+        height: 50vh;
     }
     
 }

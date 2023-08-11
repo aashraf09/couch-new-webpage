@@ -19,12 +19,13 @@ import gridImg7 from '@/assets/grid-img-7.svg'
 import gridImg8 from '@/assets/grid-img-8.svg'
 import gridImg9 from '@/assets/grid-img-9.svg'
 import gridImg10 from '@/assets/grid-img-10.svg'
-import therapy from '@/assets/therapy.svg'
 import circle from '@/assets/circle.svg'
 import star from '@/assets/star.svg'
 import flower from '@/assets/flower.svg'
 import heart from '@/assets/heart.svg'
 import relaxingBody from '@/assets/relaxing body.svg'
+// import therapy from '@/assets/therapy.svg'
+import therapy from '@/assets/relaxing body.gif'
 import mobile from '@/assets/mobile.svg'
 import Navbar from '@/components/Navbar'
 import About from '@/components/About'
@@ -38,7 +39,7 @@ const Page = () => {
     <main className='page'>
       <Navbar />
       <section className="landing text-center relative">
-        <h2 className='text-3xl md:text-6xl font-bold w-3/4 m-auto py-10 md:py-20 text-[#A2E080]'>Experience the power of a healthy mind with our support</h2>
+        <h2 className='text-3xl md:text-6xl font-bold w-3/4 m-auto py-10 md:py-20 text-[#A2E080]'>You deserve a healthy mind</h2>
         <p className='text-base md:text-3xl font-bold w-3/4 md:w-1/2 m-auto'>Get mental health support, services and products on your own terms.</p>
         <Image src={semiCircles} alt='' className='semiCircles absolute'></Image>
       </section>
@@ -120,7 +121,7 @@ const Page = () => {
       </section>
       <section className="">
         <div className="flex therapy relative flex-col items-center justify-center pt-10 pb-20">
-          <div className="heading mb-16">
+          <div className="heading mb-32">
             <h2 className='text-3xl md:text-5xl text-center font-bold w-3/4 m-auto py-16 md:py-32 xl:text-7xl'><span className="green-span-text">Therapy </span> at your own <span className="green-span-text">convenience</span></h2>
           </div>
           <div className="absolute therapy-img">
